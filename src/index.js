@@ -1,6 +1,27 @@
+import createHomePage from './home';
 import { createMenuPage } from './menu'
-console.log("I'm from index.js");
+import createAboutPage from './about'
+import './main.css'
+
 
 const contentDiv = document.querySelector('#content');
-contentDiv.appendChild(
- createMenuPage())
+const home = document.querySelector('.home');
+const menu = document.querySelector('.menu');
+const about = document.querySelector('.about');
+
+contentDiv.appendChild(createHomePage());
+
+home.addEventListener('click', () => {
+ contentDiv.innerHTML = "";
+ contentDiv.appendChild(createHomePage());
+});
+
+menu.addEventListener('click', () => {
+ contentDiv.innerHTML = "";
+ contentDiv.appendChild(createMenuPage());
+});
+
+about.addEventListener('click', () => {
+ contentDiv.innerHTML = "";
+ contentDiv.appendChild(createAboutPage())
+})
