@@ -1,5 +1,6 @@
 export default function createHomePage() {
- const homeDiv = document.createElement('div');
+const homeDiv = document.createElement('div');
+homeDiv.classList.add('home-div');
 const h1 = document.createElement('h1');
 const h2 = document.createElement('h2');
 const para1 = document.createElement('p')
