@@ -4,6 +4,8 @@ import eggroll from './imgs/eggroll.jpeg';
 import beyond from './imgs/beyond.jpeg';
 export function createMenuPage() {
  const div = document.createElement('div');
+ div.classList.add('menu-div');
+
  const img1 = new Image();
  const img2 = new Image();
  const img3 = new Image();
