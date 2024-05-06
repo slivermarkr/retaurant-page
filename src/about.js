@@ -7,7 +7,7 @@ export default function createAboutPage() {
  const para2 = document.createElement("p");
  const para3 = document.createElement("p");
  const para4 = document.createElement("p");
- para1.textContent = "178 Diwata St. Metro Manila";
+ para1.textContent = "178 Bulbolito St. Metro Manila";
  para2.textContent = "122-23-71";
  para3.textContent = "@savory@email.com"
  para4.textContent = "Hello World"

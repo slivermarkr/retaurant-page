@@ -14,8 +14,8 @@ nav {
 }
 
 img {
- width: 100px; 
- height: 100px;
+ width: 150px; 
+ height: 150px;
 }
 .home,
 .about,
@@ -73,7 +73,6 @@ img {
 }
 
 .home-div,
-.menu-div,
 .about-div {
  display: flex;
  justify-content: center;
@@ -83,10 +82,7 @@ img {
  height: 100vh;
  width: 100vw;
 }
-.menu-div{
- flex-direction: row;
- gap: 1rem;
-}
+
 .about-div {
  display: grid;
  place-content: center;
@@ -107,4 +103,48 @@ img {
  z-index: -1;
  inset: 0;
  opacity: 0.5;
+}
+.menu-div {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-items: center ;
+ text-align: center;
+ width: 100vw;
+ height: 100%;
+ background-color: rgba(255,255,255, 0.2);
+ background: url(./imgs/main-page-bg-2.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ isolation: isolate;
+ gap: 1rem;
+ padding-top: 1rem;
+}
+.menu-div::after {
+ content: "";
+ position: absolute;
+ background: pink;
+ z-index: -1;
+ inset: 0;
+ opacity: 0.5;
+}
+
+
+.menuItem-box {
+ display: flex;
+ flex-direction: column-reverse;
+ justify-content: center;
+ align-items: center;
+ border: 3px solid rgb(250, 133, 153);
+ color: white;
+ background-color: rgb(255, 219, 225);
+ padding: 1rem 1rem;
+ width: 60ch;
+ color: rgb(52, 52, 52);
+ font-size: 1em;
+ letter-spacing: 1px;
+ cursor: pointer;
+}
+.menuItem-box:hover {
+ background-color: rgba(243, 112, 133,.5);
 }
